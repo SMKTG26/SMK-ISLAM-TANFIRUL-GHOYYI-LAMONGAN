@@ -2,7 +2,7 @@ window.SPMB_DATA = {
   "schoolName": "SMK Islam Tanfirul Ghoyyi",
   "tagline": "Sekolah berbasis Al Qur'an & Bahasa",
   "year": "2027/2028",
-  "heroTitle": "SPMB SMK ISLAM TANFIRUL GHOYYI",
+  "heroTitle": "SMK ISLAM TANFIRUL GHOYYI",
   "heroDescription": "Membentuk generasi berilmu, berakhlak, terampil, dan siap menghadapi masa depan.",
   "welcomeText": "Membangun generasi Qur'ani, berbahasa, berkarakter, dan siap berkarya.",
   "heroExtra": "Website informasi SPMB dan program sekolah SMK Islam Tanfirul Ghoyyi.",
@@ -69,7 +69,7 @@ window.SPMB_DATA = {
     "Latihan Kepemimpinan"
   ],
   "programs": [
-    "Program Keahlian 1",
+    "Program Keahlian",
     "DESAIN KOMUNIKASI KEAHLIAN ( DKV )"
   ],
   "media": [
