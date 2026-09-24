@@ -1,0 +1,26 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Editor SPMB — SMK Islam Tanfirul Ghoyyi</title><link rel="stylesheet" href="admin.css"></head><body>
+<header><div><span>EDITOR WEBSITE</span><h1>SMK Islam Tanfirul Ghoyyi</h1><p>SPMB Tahun Pelajaran 2027/2028</p></div><a href="index.html">← Lihat Website</a></header>
+<main><div class="notice"><b>Penting:</b> Setelah klik <b>Simpan & Download data.js</b>, upload file <b>data.js</b> hasil download ke repository GitHub untuk menerbitkan perubahan.</div>
+<form id="editor">
+<section><h2>Identitas & Pendaftaran</h2><div class="grid">
+<label>Nama Sekolah<input name="schoolName"></label><label>Tagline<input name="tagline"></label><label>Tahun<input name="year"></label><label>Judul Hero<input name="heroTitle"></label><label>Link Pendaftaran<input name="formUrl"></label><label>WhatsApp<input name="phone"></label><label>Email<input name="email"></label><label>Alamat<input name="address"></label><label class="wide">Deskripsi Hero<textarea name="heroDescription"></textarea></label><label class="wide">Teks Sambutan<textarea name="welcomeText"></textarea></label><label class="wide">Deskripsi Sambutan<textarea name="heroExtra"></textarea></label></div></section>
+<section><h2>Foto Utama</h2><p class="hint">Upload foto. Gambar akan disimpan ke data.js sebagai data URL. Disarankan maksimal 3–5 MB per foto agar repository tetap ringan.</p><div class="photo-grid">
+<div class="upload"><label>Logo Sekolah (opsional)<input type="file" accept="image/*" data-file="logo"></label><img id="preview-logo"></div>
+<div class="upload"><label>Foto Kepala Sekolah<input type="file" accept="image/*" data-file="principalPhoto"></label><img id="preview-principalPhoto"></div>
+<div class="upload"><label>Foto Pendiri Pondok Pesantren<input type="file" accept="image/*" data-file="founderPhoto"></label><img id="preview-founderPhoto"></div>
+<div class="upload"><label>Foto Gedung / Background<input type="file" accept="image/*" data-file="buildingPhoto"></label><img id="preview-buildingPhoto"></div>
+<div class="upload"><label>Foto Barcode Pendaftaran<input type="file" accept="image/*" data-file="barcodePhoto"></label><img id="preview-barcodePhoto"></div></div>
+<div class="grid"><label>Nama Kepala Sekolah<input name="principalName"></label><label>Nama Pendiri<input name="founderName"></label></div></section>
+<section><h2>Waktu Pendaftaran</h2><div id="schedule"></div><button type="button" class="small-btn" id="addSchedule">+ Tambah Gelombang</button></section>
+<section><h2>Cara Pendaftaran & Program</h2><div class="grid">
+<label class="wide">Penjelasan Pendaftaran<textarea name="registrationDescription"></textarea></label>
+<label class="wide">Dokumen — satu item per baris<textarea name="documents"></textarea></label>
+<label class="wide">Alur Pendaftaran — satu item per baris<textarea name="steps"></textarea></label>
+<label class="wide">Kegiatan Harian<textarea name="dailyActivities"></textarea></label>
+<label class="wide">Kegiatan Bulanan<textarea name="monthlyActivities"></textarea></label>
+<label class="wide">Kegiatan Tahunan<textarea name="yearlyActivities"></textarea></label>
+<label class="wide">Program Keahlian/Jurusan — satu item per baris<textarea name="programs"></textarea></label></div></section>
+<section><h2>Galeri Foto & Video</h2><p class="hint">Untuk foto, gunakan tombol upload. Untuk video, gunakan URL file MP4/WEBM yang dapat diakses browser. Untuk video besar, lebih baik gunakan hosting video/CDN.</p><div id="mediaEditor"></div><button type="button" class="small-btn" id="addMedia">+ Tambah Foto / Video</button></section>
+<section><h2>Keamanan & Catatan</h2><p class="hint">Halaman editor ini adalah editor statis, bukan sistem login. Jangan membagikan URL editor kepada pihak yang tidak dipercaya. Perubahan baru online setelah <b>data.js</b> diunggah ke GitHub.</p></section>
+<div class="actions"><button type="submit" class="save">💾 SIMPAN & DOWNLOAD data.js</button><a href="index.html">Buka Website</a></div>
+</form></main><script src="data.js"></script><script src="admin.js"></script></body></html>

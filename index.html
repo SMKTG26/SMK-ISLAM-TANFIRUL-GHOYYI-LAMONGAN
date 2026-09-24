@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Website SPMB SMK Islam Tanfirul Ghoyyi Tahun Pelajaran 2027/2028">
+<meta name="theme-color" content="#0b604a">
+<title>SPMB 2027/2028 — SMK Islam Tanfirul Ghoyyi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="pageBg" class="page-bg"></div>
+<header class="site-header">
+  <a class="brand" href="#beranda">
+    <div class="logo-box" id="logoBox">TG</div>
+    <div><b id="schoolName">SMK Islam Tanfirul Ghoyyi</b><span id="tagline"></span></div>
+  </a>
+  <nav id="nav">
+    <a href="#beranda">Beranda</a><a href="#spmb">SPMB</a><a href="#program">Program</a><a href="#galeri">Galeri</a><a href="#kontak">Kontak</a>
+  </nav>
+  <button class="menu" id="menuBtn" aria-label="Menu">☰</button>
+</header>
+
+<main>
+<section id="beranda" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">PENERIMAAN MURID BARU • <span id="year"></span></span>
+      <h1 id="heroTitle">Penerimaan Murid Baru</h1>
+      <p id="heroDescription"></p>
+      <div class="actions"><a id="registerBtn" class="btn primary" target="_blank" rel="noopener">Daftar Sekarang ↗</a><a href="#spmb" class="btn ghost">Lihat Informasi</a></div>
+      <div class="hero-note">Pendaftaran online • Mudah • Cepat • Terarah</div>
+    </div>
+    <div class="leaders">
+      <article class="person-card"><img id="principalPhoto" alt="Kepala Sekolah"><div><small>Kepala Sekolah</small><h3 id="principalName"></h3></div></article>
+      <article class="person-card"><img id="founderPhoto" alt="Pendiri Pondok Pesantren"><div><small>Pendiri Pondok Pesantren</small><h3 id="founderName"></h3></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="spmb" class="section">
+  <div class="section-title"><span>01</span><div><small>INFORMASI UTAMA</small><h2>SPMB <em id="titleYear"></em></h2></div></div>
+  <p id="intro" class="lead"></p>
+  <div id="scheduleGrid" class="schedule-grid"></div>
+  <div class="two-col">
+    <article class="card">
+      <div class="card-head"><span class="round">↗</span><div><small>LANGKAH PENDAFTARAN</small><h3>Cara Pendaftaran</h3></div></div>
+      <p id="registrationDescription"></p>
+      <ol id="steps" class="steps"></ol>
+      <a id="formLink" class="btn primary full" target="_blank" rel="noopener">Buka Link Pendaftaran</a>
+    </article>
+    <article class="card">
+      <div class="card-head"><span class="round">✓</span><div><small>SIAPKAN BERKAS</small><h3>Dokumen Pendaftaran</h3></div></div>
+      <ul id="documents" class="checks"></ul>
+      <div class="barcode"><img id="barcodePhoto" alt="Barcode Pendaftaran"><div><b>SCAN BARCODE</b><span>Atau gunakan link pendaftaran di samping.</span></div></div>
+    </article>
+  </div>
+</section>
+
+<section id="program" class="section section-soft">
+  <div class="section-title"><span>02</span><div><small>PEMBINAAN PESERTA DIDIK</small><h2>Program & Kegiatan</h2></div></div>
+  <div class="activity-grid">
+    <article class="activity"><div class="activity-icon">☀</div><h3>Kegiatan Harian</h3><ul id="daily"></ul></article>
+    <article class="activity"><div class="activity-icon">◉</div><h3>Kegiatan Bulanan</h3><ul id="monthly"></ul></article>
+    <article class="activity"><div class="activity-icon">★</div><h3>Kegiatan Tahunan</h3><ul id="yearly"></ul></article>
+  </div>
+  <div class="program-wrap"><small>PROGRAM KEAHLIAN</small><h3>Belajar, Berkarya, Berprestasi</h3><div id="programList" class="program-list"></div></div>
+</section>
+
+<section id="galeri" class="section">
+  <div class="section-title"><span>03</span><div><small>DOKUMENTASI</small><h2>Prestasi & Kegiatan Siswa</h2></div></div>
+  <p class="lead">Dokumentasi siswa, prestasi, kegiatan pembelajaran, dan program sekolah.</p>
+  <div id="mediaGrid" class="media-grid"></div>
+</section>
+
+<section class="feature">
+  <div class="feature-photo"><img id="buildingPhoto" alt="Gedung SMK Islam Tanfirul Ghoyyi"></div>
+  <div class="feature-copy"><span class="eyebrow dark">SMK ISLAM TANFIRUL GHOYYI</span><h2 id="welcomeText"></h2><p id="heroExtra"></p><a class="btn primary" href="#spmb">Pelajari SPMB</a></div>
+</section>
+
+<section id="kontak" class="section">
+  <div class="section-title"><span>04</span><div><small>INFORMASI KONTAK</small><h2>Hubungi Kami</h2></div></div>
+  <div class="contact-grid">
+    <article class="card"><h3>Panitia SPMB</h3><p>WhatsApp</p><a id="phoneLink" class="contact-link"></a><p>Email</p><b id="email"></b></article>
+    <article class="card"><h3>Alamat Sekolah</h3><p id="address"></p><div class="contact-actions"><a id="formLink2" class="btn primary" target="_blank" rel="noopener">Daftar Online ↗</a></div></article>
+  </div>
+</section>
+</main>
+
+<footer><div><b id="footerSchool"></b><span>SPMB Tahun Pelajaran <span id="footerYear"></span></span></div><a href="admin.html">⚙ Editor Website</a></footer>
+<script src="data.js"></script><script src="script.js"></script>
+</body>
+</html>
